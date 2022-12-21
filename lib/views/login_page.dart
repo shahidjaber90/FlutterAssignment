@@ -29,6 +29,23 @@ class _LoginPageState extends State<LoginPage> {
     } else {
       setState(() {
         TextConstants.loginErrorText = 'Login failed';
+        showDialog(
+            context: context,
+            builder: (context) {
+              return Container(
+                child: AlertDialog(
+                  title: const Text('Login Failed'),
+                  actions: [
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      child: const Text('OK'),
+                    )
+                  ],
+                ),
+              );
+            });
       });
     }
   }

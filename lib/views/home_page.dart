@@ -15,11 +15,6 @@ class _HomePageState extends State<HomePage> {
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
 
-//   navigateLoginPage(){
-//   return Navigator.of(context).pushReplacement(
-//     MaterialPageRoute(builder: (context) => const LoginPage()),
-//       );
-// }
 
   @override
   Widget build(BuildContext context) {
